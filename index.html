@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GTNH.UMCEKO.COM — GregTech New Horizons (Tanıtım & Kurulum)</title>
+    <meta name="description" content="GregTech New Horizons (GTNH) için rehber, indirme ve sunucu bilgileri." />
+    <style>
+
+        :root{
+            --bg:#0f1724;
+            --card:#0b1220;
+            --accent: #003470;
+          --accent2: #000080 ;
+            --muted:#9aa4b2;
+            --glass: rgba(255,255,255,0.03);
+            --radius:14px;
+            --container:1100px;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg,#071025 0%, #0b1220 60%);
+            color:#e6eef8;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.45;
+            padding:28px 18px;
+        }
+        .wrap{max-width:var(--container);margin:0 auto}
+        header{
+            display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;
+        }
+        .brand{display:flex;gap:14px;align-items:center}
+        .logo{
+            width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent), #ffffff);
+            display:flex;align-items:center;justify-content:center;color:#051225;font-weight:700;font-size:18px;box-shadow:0 6px 24px rgba(0,0,0,0.45);
+        }
+        h1{font-size:20px;margin:0}
+        header p{margin:0;color:var(--muted);font-size:13px}
+        nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+        main{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+        @media (max-width:940px){ main{grid-template-columns:1fr} .aside{order:2} }
+        .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+        .hero{
+            display:flex;gap:18px;align-items:center;padding:22px;
+        }
+        .hero .left{flex:1}
+        .hero h2{margin:0 0 6px 0;font-size:22px}
+        .hero p{margin:0;color:var(--muted)}
+        .btn-row{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+        .btn{
+            background:linear-gradient(180deg,var(--accent), #02095d);
+            color:#051225;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+            box-shadow:0 6px 18px rgba(164, 164, 164, 0.12);
+        }
+        .btn-1 {
+          background:linear-gradient(180deg,var(--accent2), #071025 );
+          ;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+          box-shadow:0 6px 18px #041226 ;
+        }
+        .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600}
+        .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+        @media (max-width:800px){ .features{grid-template-columns:repeat(2,1fr)} }
+        @media (max-width:540px){ .features{grid-template-columns:1fr} }
+        .feature{padding:12px;background:var(--glass);border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+        .muted{color:var(--muted);font-size:13px}
+        .section{margin-top:18px}
+        .install-steps ol{padding-left:18px}
+        .aside .card {position:sticky; top:28px}
+        .code{
+            background:#041226;padding:12px;border-radius:10px;border:1px dashed rgba(255,255,255,0.03);font-family:monospace;font-size:13px;color:#cfe8ff;
+            overflow:auto;
+        }
+        footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+        .tag{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:10px;margin-right:8px;color:var(--muted);font-size:13px}
+        .server-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+        .server-item{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .faq dt{font-weight:700;margin-top:10px}
+        .small{font-size:13px;color:var(--muted)}
+        .search{display:flex;gap:8px;margin-top:12px}
+        input[type="search"]{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="brand">
+
+            <div> <img src="Site%20gtnh%20logo.png" style="width: 70px; height: 57px;"></div>
+            <div>
+                <h1>GTNH UMCEKO.COM</h1>
+                <p>GregTech: New Horizons — rehber, kurulum ve sunucu bilgileri</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#indir">İndir</a>
+            <a href="#kurulum">Kurulum</a>
+
+            <a href="#sss">SSS</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="card hero">
+                <div class="left">
+                    <h2>GTNH — SEZON 4 BAŞLADI</h2>
+                    <p>GregTech New Horizons (GTNH) zorlu, teknoloji yoğun ve keşif odaklı bir Minecraft deneyimidir. Bu internet sitesi tamamen sunucudaki son gelişmeler ve nasıl modu kurabileceğinizi öğrenmek içindir.</p>
+
+                    <div class="btn-row">
+                        <a class="btn ghost" href="https://prismlauncher.org/" target="_blank"> İndir (Prisim Launcher) ⬇
+
+                        </a>
+                        <a class="btn ghost" href="#kurulum">Kurulum Rehberi</a>
+                    </div>
+                </div>
+                <div style="width:260px;text-align:center">
+
+                  <div style="width:240px; height:150px; border-radius:20px; overflow:hidden; box-shadow: 1px 5px 20px #555555; border: 1px solid papayawhip;">
+                    <img id="slider" src="site%20foto%202.png"
+                         style="width:100%; height:100%; border-radius:20px; object-fit:cover; transition: opacity 1s ease;">
+
+                  </div>
+
+                  <script>
+
+                    const images = [
+                      "site%20foto%202.png",
+                      "site%20foto3.png",
+                      "site%20foto4.png",
+                    ];
+
+                    let index = 0;
+                    const slider = document.getElementById("slider");
+
+
+                    setInterval(() => {
+
+                      slider.style.opacity = 0;
+
+                      setTimeout(() => {
+                        index = (index + 1) % images.length;
+                        slider.src = images[index];
+
+
+                        slider.style.opacity = 1;
+                      }, 1000);
+                    }, 4000);
+                  </script>
+
+                  <div class="muted small" style="margin-top:10px">Sürüm:2.8.0 <strong id="pack-version"></strong></div>
+                </div>
+            </div>
+
+            <div class="card section">
+                <h3>Öne çıkan özellikler</h3>
+                <div class="features">
+                    <div class="feature">
+                        <strong>Zorlu İlerleme</strong>
+                        <div class="muted small">Kaynak yönetimi ve uzun vadeli planlama gerektirir.</div>
+                    </div>
+                    <div class="feature">
+                        <strong>Geniş Mod Listesi</strong>
+                        <div class="muted small">GregTech, IC2, TE, Tinkers ve daha fazlası.</div>
+                    </div>
+                    <div class="feature">
+                        <strong>Neler yapılır</strong>
+                        <div class="muted small">Hep beraber yapılan madenler ve maceralar ile oyun zevkinizi zirveye çıkarın.</div>
+                    </div>
+                </div>
+
+                <div class="section install-steps">
+                    <h3 id="kurulum">Kurulum (Detaylı anlatım)</h3>
+                    <ol>
+                        <li><strong>Java kur:</strong> GTNH genelde Java 8, 11, <b>25</b> ile çalışır. (Biz size java 25 i öneririz daha iyi bir performans ve daha güncel kalmanız için.)</li>
+                        <br>
+                        <li><strong>Modpack yöneticisi:</strong> Genel kurulum <b>Prisim launcher</b> üzerinden yapılır.</li>
+                        <br>
+                        <li><strong>Javanı yükle:</strong> ADOPTIUM üzerinden javanı kur.  </li>
+                        <br>
+                        <li><strong>Javanı launchera ekle:</strong> Ayarlardan javanı seç.</li>
+                        <br>
+                        <li><strong>Java Kurulumunu Tamamla</strong> sitemizde indirme notları kısmına giderek java kurulumununuzu tamamlayınız.</li>
+                        <br>
+                        <li><strong>İleri ayarlar:</strong> JVM argümanları ve RAM için (ör. -Xmx6G) ayarlama yap.</li>
+                    </ol>
+
+                    <div style="margin-top:12px">
+                        <div class="tag">Oynanılan Platform: Prisim launcher</div>
+                        <div class="tag">Önerilen RAM: 6GB+</div>
+                        <div class="tag">Java: 8/11/25</div>
+                    </div>
+
+                    <h4 style="margin-top:12px">Örnek Sunucuya Bağlanma (IP ekleme)</h4>
+                    <div class="code">
+<pre>// Sunucu ekleme için
+1) Minecraft > Multiplayer > Add Server
+2) Server Name: İsteğinize bağlı bir şekilde ekleyiniz
+3) Server Ip Address: <em>ip: umceko.com</em>
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card section">
+                <h3 id="modlist">Kısa Modlistesi (örnek)</h3>
+                <p class="muted small">Aşağıda modların örnek kısa listesi — tam liste pack içindeki manifest.json'da bulunur.</p>
+                <ul>
+                    <li>GregTech</li>
+                    <li>IndustrialCraft 2</li>
+                    <li>Thermal Expansion</li>
+                    <li>Tinkers' Construct</li>
+                    <li>Applied Energistics 2</li>
+                    <li>Biomes O' Plenty</li>
+                </ul>
+
+                <h4>İndirme Notları</h4>
+                <p class="muted small">Modpack'i <strong>gtnewhorizons.com</strong> üzerinden indiriyorsun ve dosyayı prisim launcher içerisine sürüklüyüorsun ardından yukarıdan ayarlara
+                  tıkla > java > java konumu > otomatik bul diyip java 25 i seçiyoruz<br> ardıdnan bu Texti kopyalayıp <strong>JVM argümanlarına yapıştırınız: </strong>
+                  -Dfile.encoding=UTF-8 -Djava.system.class.loader=com.gtnewhorizons.retrofuturabootstrap.RfbSystemClassLoader --add-opens java.base/java.io=ALL-UNNAMED
+                  --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.lang.ref=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED
+                  --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.net.spi=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base
+                  /java.nio.channels=ALL-UNNAMED --add-opens java.base/java.nio.charset=ALL-UNNAMED --add-opens java.base/java.nio.file=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED
+                  --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.base/java.time.chrono=ALL-UNNAMED --add-opens java.base/java.time.format=ALL-UNNAMED
+                  --add-opens java.base/java.time.temporal=ALL-UNNAMED --add-opens java.base/java.time.zone=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED
+                  --add-opens java.base/java.util.concurrent.atomics=ALL-UNNAMED --add-opens java.base/java.util.concurrent.locks=ALL-UNNAMED --add-opens java.base/java.util.jar=ALL-UNNAMED
+                  --add-opens java.base/java.util.zip=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/jdk.internal.loader=ALL-UNNAMED
+                  --add-opens java.base/jdk.internal.misc=ALL-UNNAMED --add-opens java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/jdk.internal.reflect=ALL-UNNAMED
+                  --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.desktop/com.sun.imageio.plugins.png=ALL-UNNAMED --add-opens java.desktop/sun.awt.image=ALL-UNNAMED
+                  --add-opens java.desktop/sun.awt=ALL-UNNAMED --add-opens java.sql.rowset/javax.sql.rowset.serial=ALL-UNNAMED --add-opens jdk.dynalink/jdk.dynalink.beans=ALL-UNNAMED
+                  --add-opens jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED,java.naming -XX:+UseCompactObjectHeaders -Duser.language=en -Duser.country=US <br><br> Bu işlemlerden sonra zevkle oyunun
+                  keyfini çıkarabilirsiniz
+
+                  </b> .</p>
+            </div>
+
+            <div class="card section">
+                <h3 id="sss">SSS</h3>
+                <dl class="faq">
+                    <dt>Hangi Java sürümünü kullanmalıyım?</dt>
+                    <dd class="muted small">GTNH sürümüne göre değişir; çoğu zaman Java 8 veya 11 önerilirsede java 25 kurmanızı şiddetle öneririz. Pack notlarını kontrol et.</dd>
+
+                    <dt>Performans için ne önerirsin?</dt>
+                    <dd class="muted small">En düşük Win10 işletim sistemi kullanmanız, RAM 6GB+, Ekran Kartı: En az 6 GB VRAM’e sahip orta seviye bir kart önerilir.
+                      Örnek kartlar: RTX 3060 serisi, RX 580/8GB gibi.</dd>
+
+                    <dt>Sunucunuza katılmak istiyorum, nereden başlamalıyım?</dt>
+                    <dd class="muted small">Sana anlatıldığı gibi oyunu kur ve oyun içerisinden çok oyunculuya tıkla oraya sunucumuzun ip adresini yaz. İşte oldu! artık bizlerle de oynayabilirsin</dd>
+                </dl>
+            </div>
+        </section>
+
+
+        <aside class="aside">
+            <div class="card">
+                <h4>İndir & Hızlı Linkler</h4>
+                <p class="muted small">Aşağıdaki butonları kendi hedef linklerinle değiştir.</p>
+
+              <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                <a class="btn ghost" href="https://prismlauncher.org/" target="_blank">Prism Launcher</a>
+                <a class="btn ghost" href="https://atlauncher.com/" target="_blank">ATLauncher</a>
+                <a class="btn ghost" href="https://adoptium.net/temurin/releases" target="_blank" >ADOPTIUM</a>
+              </div>
+
+
+              <div class="section">
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+        </aside>
+    </main>
+
+    <footer>
+        <div class="small"> Hazırlayan: Pqanee • İletişim: kaanaltas2007.72@gmail.com</div>
+    </footer>
+</div>
+
+<script>
+
+    document.getElementById('btn-download').addEventListener('click', function(e){
+        e.preventDefault();
+
+        alert('İndir — Prisim launcher.');
+    });
+
+    function siteSearch(){
+        const q = document.getElementById('search').value.trim().toLowerCase();
+        const out = document.getElementById('search-result');
+        if(!q){ out.innerText = 'Arama girin.'; return; }
+
+        if(q.includes('kurul') || q.includes('kurulum')) out.innerText = 'Kurulum rehberi kısmına bakın: "Kurulum (Hızlı Adımlar)".';
+        else if(q.includes('sunucu') || q.includes('ip')) out.innerText = 'Sunucu IP bilgileri sağ sütunda listeleniyor.';
+        else if(q.includes('indir') || q.includes('curseforge')) out.innerText = '.';
+        else out.innerText = 'Sonuç bulunamadı — kelimeyi değiştir veya siteyi manuel tara.';
+    }
+
+
+    (function(){
+
+        const versionEl = document.getElementById('pack-version');
+        versionEl.innerText = '';
+    })();
+</script>
+</body>
+</html>
