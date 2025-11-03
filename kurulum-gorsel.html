@@ -1,20 +1,164 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GTNH Kurulum Görselli Anlatım</title>
-</head>
+  <link rel="icon" type="image/png" href="icon.png">
+
+
+
+
+
+
+
+  <style>
+
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#003470;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --container:1100px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071025 0%,#0b1220 60%);
+      color:#e6eef8;
+      padding:28px 18px;
+      line-height:1.45;
+    }
+    .wrap{max-width:65%;(--container);margin:0 auto;}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 6px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.02);
+      margin-bottom:20px;
+    }
+    .step{
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+      margin-top:18px;
+      padding:12px;
+      border-radius:var(--radius);
+      background:var(--glass);
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .step img{
+      width:180px;
+      height:120px;
+      border-radius:12px;
+      object-fit:cover;
+      flex-shrink:0;
+    }
+    .step div{flex:1;}
+    h2,h3{margin:0 0 6px 0;}
+    p{margin:4px 0;color:var(--muted);}
+    .btn.ghost {
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);
+      font-weight:600;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+
+      .step img{
+        width:80%;
+        height:auto;
+      }
+      .step div{flex:unset;}
+
+
+    .adoptium {
+      width: 100px;
+      height: 60%;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    .prism-img {
+      width: 200px;
+      height: 150px;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    .gtnh-img {
+      width: 200px;
+      height: 150px;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+    </head>
 <body>
-<h2>GTNH Kurulum Görselli Anlatım</h2>
-<ol>
-  <li>Java kurulumunu görselli anlatım ile göster.</li>
-  <li>Prism Launcher kurulumu adım adım.</li>
-  <li>JVM ayarları ve RAM konfigürasyonu ekran görüntüleri.</li>
-</ol>
-<a href="index.html">Ana sayfaya dön</a>
+<div class="wrap">
+  <div class="card">
+    <h2>GTNH Kurulum Görselli Anlatım</h2>
 
+    <div class="step">
+      <img src="adoptium kurulum.png" style="width:40%; height:70%;" alt="Java Kurulum">
+      <div>
+        <h3>Java Kurulumu</h3>
+        <p>ADOPTIUM üzerinden Java 25'i kurun ve sornaki adıma geçin.</p>
+      </div>
+    </div>
 
-<a> YAPIM AŞAMASINDA </a>
+    <div class="step">
+      <img src="prisim.png" style="height: 100%; width: 60%" alt="Prism Launcher Kurulum">
+      <div>
+        <h3>Prism Launcher Kurulumu</h3>
+        <p>Prism Launcher’ı kurmak için <b>'Dowland Now'</b> a basıp prismin dosyasını kurun .</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="gtnh.png"style="width:40%; height:70%;" alt="Modpack Yükleme">
+      <div>
+        <h3>Modpack Yükleme</h3>
+        <p>Modpack dosyalarını Prism Launcher içerisine sürükleyip bırakın.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="jvm-settings.png" alt="JVM Ayarları">
+      <div>
+        <h3>JVM ve RAM Ayarları</h3>
+        <p>size verilen.</p>
+      </div>
+    </div>
+
+    <p class="btn-container">
+      <a href="index.html" class="btn ghost">Ana Sayfaya Dön</a>
+    </p>
+  </div>
+</div>
 </body>
 </html>
